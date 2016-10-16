@@ -1,0 +1,5 @@
+%h1 This is a workouts index placeholder
+
+-@workouts.each do |workout|
+    %h3= link_to workout.date, workout_path(workout)
+    %p= workout.workout
